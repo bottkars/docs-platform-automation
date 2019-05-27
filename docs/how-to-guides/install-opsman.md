@@ -95,7 +95,7 @@ and uniquely identifies an Ops Manager image to download.
 An example `download-ops-man.yml` is shown below.
 
 If your foundation uses authentication other than basic auth,
-please reference [Inputs and Outputs][env]
+please reference [Inputs and Outputs][]
 for more detail on UAA-based authentication.
 
 Write an `download-ops-man.yml` for your Ops Manager.
@@ -226,7 +226,7 @@ jobs:
         PREFIX: /concourse/your-team-name/foundation
         INTERPOLATION_PATHS: foundation # contains download-ops-manager.yml
       input_mapping:
-        files: env
+        files: config
       output_mapping:
         interpolated-files: interpolated-config
     - task: download-product        
@@ -363,7 +363,7 @@ jobs:
         PREFIX: /concourse/your-team-name/foundation
         INTERPOLATION_PATHS: foundation # contains download-ops-manager.yml
       input_mapping:
-        files: env
+        files: config
       output_mapping:
         interpolated-files: interpolated-config
     - task: download-product        
@@ -470,7 +470,7 @@ jobs:
         PREFIX: /concourse/your-team-name/foundation
         INTERPOLATION_PATHS: foundation # contains download-ops-manager.yml
       input_mapping:
-        files: env
+        files: config
       output_mapping:
         interpolated-files: interpolated-config
     - task: download-product        
@@ -525,7 +525,7 @@ jobs:
         PREFIX: /concourse/your-team-name/foundation
         INTERPOLATION_PATHS: foundation # contains download-ops-manager.yml
       input_mapping:
-        files: env
+        files: config
       output_mapping:
         interpolated-files: interpolated-config
     - task: download-product        
