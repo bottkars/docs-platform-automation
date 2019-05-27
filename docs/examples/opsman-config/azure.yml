@@ -6,7 +6,7 @@ opsman-configuration:
     resource_group: res-group
     tenant_id: 3e52862f-a01e-4b97-98d5-f31a409df682
     client_id: 5782deb6-9195-4827-83ae-a13fda90aa0d
-    client_secret: 6Iaue71Lqxfq
+    client_secret: <secret>
     location: westus
     container: opsmanagerimage                    # container for opsman image
     network_security_group: ops-manager-security-group
@@ -34,5 +34,5 @@ opsman-configuration:
     # needs to be assigned to the VM.
     # It is also permissable to assign both.
     public_ip: 1.2.3.4
-    private_ip: 10.0.0.3
+    private_ip: 10.0.0.4
 # code_snippet azure-configuration end
